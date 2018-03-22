@@ -1,0 +1,304 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    | &#x9;
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    | &#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title HTML Template
+    // Google font
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round', rel='stylesheet')
+    // Bootstrap
+    link(type='text/css', rel='stylesheet', href='css/bootstrap.min.css')
+    // Owl Carousel
+    link(type='text/css', rel='stylesheet', href='css/owl.carousel.css')
+    | &#x9;
+    link(type='text/css', rel='stylesheet', href='css/owl.theme.default.css')
+    // Magnific Popup
+    link(type='text/css', rel='stylesheet', href='css/magnific-popup.css')
+    // Font Awesome Icon
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    // Custom stlylesheet
+    link(type='text/css', rel='stylesheet', href='css/style.css')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      | &#x9;&#x9;
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    // Header
+    header#home
+      // Background Image
+      .bg-img(style="background-image: url('./img/background1.jpg');")
+        .overlay
+      // /Background Image
+      // Nav
+      nav#nav.navbar.nav-transparent
+        .container
+          .navbar-header
+            // Logo
+            .navbar-brand
+              a(href='index.html')
+                img.logo(src='img/logo.png', alt='logo')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                img.logo-alt(src='img/logo-alt.png', alt='logo')
+            // /Logo
+            // Collapse nav button
+            .nav-collapse
+              span
+            // /Collapse nav button
+          // Main navigation
+          ul.main-nav.nav.navbar-nav.navbar-right
+            li
+              a(href='#home') Home
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#about') About
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#portfolio') Portfolio
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#service') Services
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#pricing') Prices
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#team') Team
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li.has-dropdown
+              a(href='#blog') Blog
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              ul.dropdown
+                li
+                  a(href='blog-single.html') blog post
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#contact') Contact
+          // /Main navigation
+      // /Nav
+      // home wrapper
+      .home-wrapper
+        .container
+          .row
+            // home content
+            .col-md-10.col-md-offset-1
+              .home-content
+                h1.white-text
+                  | We are boy news in the world of technology every time updated and constant learning.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.white-text
+                  | We have services and solutions for your bussines, for sales, streaming, rp administration of personal.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                button.white-btn Get Started!
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                button.main-btn Learn more
+            // /home content
+      // /home wrapper
+    // /Header
+    // About
+    #about.section.md-padding
+      // Container
+      .container
+        // Row
+        .row
+          // Section header
+          .section-header.text-center
+            h2.title Welcome to Website
+          // /Section header
+          // about
+          .col-md-4
+            .about
+              i.fa.fa-cogs
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 Server based in node js
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p We have service in server based in node js for streaming and chats in realtime
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              a(href='#') Read more
+          // /about
+          // /about
+        // /Row
+      // /Container
+    // /About
+    // Portfolio
+    #portfolio.section.md-padding.bg-grey
+      // Container
+      .container
+        // Row
+        .row
+          // Section header
+          .section-header.text-center
+            h2.title Featured Works
+          // /Section header
+          // Work
+          .col-md-4.col-xs-6.work
+            img.img-responsive(src='./img/work1.jpg', alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .overlay
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .work-content
+              span Category
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 Server streaming video and audio and showing in android app
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .work-link
+                a(href='#')
+                  i.fa.fa-external-link
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                a.lightbox(href='./img/work1.jpg')
+                  i.fa.fa-search
+          // /Work
+        // /Row
+      // /Container
+    // /Portfolio
+    // Service
+    #service.section.md-padding
+      // Container
+      .container
+        // Row
+        .row
+          // Section header
+          .section-header.text-center
+            h2.title What we offer
+          // /Section header
+          // service
+          .col-md-4.col-sm-6
+            .service
+              i.fa.fa-diamond
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 App Development
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.
+          // /service
+        // /Row
+      // /Container
+    // /Service
+    // Contact
+    #contact.section.md-padding
+      // Container
+      .container
+        // Row
+        .row
+          // Section-header
+          .section-header.text-center
+            h2.title Get in touch
+          // /Section-header
+          // contact
+          .col-sm-4
+            .contact
+              i.fa.fa-phone
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 Phone
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p +591 75202557
+          // /contact
+          // contact
+          .col-sm-4
+            .contact
+              i.fa.fa-envelope
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 Email
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p rmerloali@gmail.com
+          // /contact
+          // contact
+          .col-sm-4
+            .contact
+              i.fa.fa-map-marker
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h3 Address
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p Avenue Cupesi Terrado, Plan 3000, Santa Cruz de la Sierra
+          // /contact
+          // contact form
+          .col-md-8.col-md-offset-2
+            form.contact-form
+              input.input(type='text', placeholder='Name')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              input.input(type='email', placeholder='Email')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              input.input(type='text', placeholder='Subject')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              textarea.input(placeholder='Message')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              button.main-btn Send message
+          // /contact form
+        // /Row
+      // /Container
+    // /Contact
+    // Footer
+    footer#footer.sm-padding.bg-dark
+      // Container
+      .container
+        // Row
+        .row
+          .col-md-12
+            // footer logo
+            .footer-logo
+              a(href='index.html')
+                img(src='img/logo-alt.png', alt='logo')
+            // /footer logo
+            // footer follow
+            ul.footer-follow
+              li
+                a(href='#')
+                  i.fa.fa-facebook
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#')
+                  i.fa.fa-twitter
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#')
+                  i.fa.fa-google-plus
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#')
+                  i.fa.fa-instagram
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#')
+                  i.fa.fa-linkedin
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#')
+                  i.fa.fa-youtube
+            // /footer follow
+            // footer copyright
+            .footer-copyright
+              p
+                | Copyright &copy; 2018. All Rights Reserved. Designed by 
+                a(href='https://malisoft.herokuapp.com', target='_blank') Malisoft
+            // /footer copyright
+        // /Row
+      // /Container
+    // /Footer
+    // Back to top
+    #back-to-top
+    // /Back to top
+    // Preloader
+    #preloader
+      .preloader
+        span
+        | &#x9;&#x9;&#x9;
+        span
+        | &#x9;&#x9;&#x9;
+        span
+        | &#x9;&#x9;&#x9;
+        span
+    // /Preloader
+    // jQuery Plugins
+    script(type='text/javascript', src='js/jquery.min.js')
+    | &#x9;
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    | &#x9;
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    | &#x9;
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    | &#x9;
+    script(type='text/javascript', src='js/main.js')
